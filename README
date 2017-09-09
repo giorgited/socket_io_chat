@@ -1,0 +1,7 @@
+to start the project
+
+    1. pip install virtualenv (if you dont have virtualenv installed already)
+    2. virtualenv chatvirtual
+    3. . venv/bin/activate
+    4. python app.py
+    5. go to localhost:5000

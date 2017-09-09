@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_style.css') }}">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+    <script type="text/javascript" charset="utf-8"></script>
+    <script src="{{url_for('static', filename='js/login_logic.js')}}"></script>
+</head>
+<body>
+    <div class="login-page">
+        <form class="form" method="POST">
+            <input type="yourName" placeholder="your name"  id="join_name" />
+            <input type="roomName" placeholder="room name"  id="room_name" />
+            <button onclick="return join_room()">join</button>
+        </form>
+    
+        <div class="form">
+            <h2> Available Rooms</h2>
+            <ul id="availableRooms"></ul>
+        </div>
+    </div>
+</body>
